@@ -1,0 +1,31 @@
+#pragma once
+
+#include <QtGlobal>
+
+namespace ComputerWorkshop {
+
+#define COMBINE_OPS(op1, op2) op1##_##op2 = op1 | op2
+
+enum OperationRightType : quint16 {
+	NONE = 0x00,
+	CREATE = 0x01,
+	READ = 0x02,
+	UPDATE = 0x04,
+	DELETE = 0x08,
+
+	COMBINE_OPS(CREATE, READ),
+	COMBINE_OPS(CREATE, UPDATE),
+	COMBINE_OPS(CREATE, DELETE),
+	COMBINE_OPS(READ, UPDATE),
+	COMBINE_OPS(READ, DELETE),
+	COMBINE_OPS(UPDATE, DELETE),
+	COMBINE_OPS(CREATE_READ, UPDATE),
+	COMBINE_OPS(CREATE_READ, DELETE),
+	COMBINE_OPS(CREATE_UPDATE, DELETE),
+	COMBINE_OPS(READ_UPDATE, DELETE),
+	COMBINE_OPS(CREATE_READ_UPDATE, DELETE),
+};
+
+#undef COMBINE_OPS
+
+} // namespace ComputerWorkshop

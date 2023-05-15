@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/add_30.png</file>
+        <file>assets/add_60.png</file>
+        <file>assets/edit_64.png</file>
+        <file>assets/remove_48.png</file>
+        <file>assets/reload_48.png</file>
+        <file>assets/pc_repair_60.png</file>
+        <file>assets/settings_50.png</file>
+        <file>assets/report_50.png</file>
+    </qresource>
+</RCC>
