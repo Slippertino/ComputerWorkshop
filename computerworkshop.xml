@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<computerworkshop>
+	<database>
+		<driver>ODBC Driver 17 for SQL Server</driver>
+		<host>DESKTOP-G5OVJJN</host>
+		<name>ComputerWorkshop</name>
+		<user>sa</user>
+		<password>qwerty</password>
+	</database>
+</computerworkshop>
